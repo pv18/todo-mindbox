@@ -1,12 +1,17 @@
-import {combineReducers, createStore} from 'redux'
+import {createStore} from 'redux'
 import {TypedUseSelectorHook, useSelector} from 'react-redux';
-import {todoReducer} from './redusers/todoReducer';
+import {initialState, todoReducer} from './redusers/todoReducer';
 
-const rootReducer = combineReducers({
-    todos: todoReducer,
+const persistedState = localStorage.getItem('reduxState')
+    ? JSON.parse(localStorage.getItem('reduxState') || '')
+    : initialState
+
+export const store = createStore(todoReducer, persistedState)
+
+store.subscribe(() => {
+    localStorage.setItem('reduxState', JSON.stringify(store.getState()))
 })
 
-export const store = createStore(rootReducer)
 export type RootState = ReturnType<typeof store.getState>
 export const useAppSelector: TypedUseSelectorHook<RootState> = useSelector
 

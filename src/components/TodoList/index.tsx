@@ -9,7 +9,7 @@ import {Todo} from './Todo';
 import './style.scss';
 
 export const TodoList = () => {
-    const {tasks, filter} = useAppSelector(state => state.todos)
+    const {tasks, filter} = useAppSelector(state => state)
     const dispatch = useDispatch()
 
     const addTodoHandler = (e: KeyboardEvent<HTMLInputElement> & ChangeEvent<HTMLInputElement>) => {
