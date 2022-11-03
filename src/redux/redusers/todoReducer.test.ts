@@ -22,7 +22,6 @@ test('correct task should be deleted from array tasks', () => {
     expect(endState.tasks.every(t => t.id != 2)).toBeTruthy()
     expect(endState.tasks[0].id).toBe(1)
     expect(endState.tasks[1].id).toBe(3)
-
 });
 
 test('correct task should be added to tasks array', () => {
