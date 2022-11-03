@@ -5,8 +5,8 @@ import {useDispatch} from 'react-redux';
 import {addTask, changeFilter, checkAll, checkTask, deleteCompleted, deleteTask} from '../../redux/actions';
 import {InputPanel} from './InputPanel';
 import {ButtonPanel} from './ButtonPanel';
-import './style.scss';
 import {Todo} from './Todo';
+import './style.scss';
 
 export const TodoList = () => {
     const {tasks, filter} = useAppSelector(state => state.todos)

@@ -16,7 +16,7 @@ export type TaskType = {
     checked: boolean
 }
 
-type InitialStateType = {
+export type InitialStateType = {
     tasks: TaskType[]
     filter: string
 }
