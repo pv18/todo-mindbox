@@ -1,0 +1,31 @@
+.input_panel {
+  padding: 10px 13px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #E6E6E6;
+}
+
+.todo_input {
+  width: 100%;
+  display: block;
+  font-size: 24px;
+  font-weight: 200;
+  background-color: transparent;
+  padding: 10px;
+  border: none;
+  color: #777;
+  outline: none;
+  &:focus {
+    color: #777;
+  }
+  &::placeholder{
+    font-style: italic;
+    color: #E6E6E6;
+  }
+}
+
+.arrow_down {
+  margin-right: 10px;
+  font-size: 30px;
+  color: #E6E6E6;
+}

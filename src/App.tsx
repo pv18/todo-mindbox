@@ -1,11 +1,15 @@
-import React from 'react';
+import './App.scss';
+import {TodoList} from './components/TodoList';
 
-const App = () => {
+function App() {
     return (
-        <div>
-          
-        </div>
-    );
-};
+        <>
+            <h1 className={'todo_title'}>todos</h1>
+            <div className={'todo_block'}>
+                <TodoList/>
+            </div>
+        </>
+    )
+}
 
 export default App;
