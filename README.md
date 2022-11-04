@@ -1,4 +1,5 @@
 ![preview](https://github.com/pv18/todo-mindbox/blob/master/public/img/preview.jpg)
+
 # Todos
 
 Тестовое задание на позицию стажер
@@ -6,6 +7,7 @@
 ## Функционал
 
 * Фильтрация
+* работа с LocalStorage
 * Ключевая функциональность покрыта тестами
 
 ## Технологии
