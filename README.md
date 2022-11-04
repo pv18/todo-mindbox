@@ -1,4 +1,4 @@
-[//]: # (![preview]&#40;https://github.com/pv18/gallery-react/blob/master/public/img/preview.jpg&#41;)
+![preview](https://github.com/pv18/todo-mindbox/blob/master/public/img/preview.jpg)
 # Todos
 
 Тестовое задание на позицию стажер
